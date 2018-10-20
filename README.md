@@ -17,3 +17,23 @@ $oldNamesFilePath = "C:\PathToTheFile\WithOldNames.txt"
 $newNamesFilePath = "C:\PathToTheFile\WithNewNames.txt"
 $filePath = "C:\PathToTheFolder\WithFilesToRename\"
 ```
+## FileDownloader
+### What is ?
+PowerShell script to download multiple files.
+### Invoke-WebRequest
+**Get an HTML page**
+```powershell
+Invoke-WebRequest -OutFile index.html http://example.com
+```
+**Get a file**
+```powershell
+Invoke-WebRequest -OutFile image.png http://example.com/file.png
+```
+### How to use 
+There are two variables that you can set:
+1. `$links` : The path to the file that contain the list of urls to download.
+2. `$destination` : The path to the folder where you want to store the downloaded data
+```powershell
+$links = Get-Content -Path "C:\PathToTheListFile"
+$destination = "C:\PathToDestinationFolder"
+```
