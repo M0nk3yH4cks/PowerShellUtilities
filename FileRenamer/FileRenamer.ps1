@@ -2,7 +2,7 @@ $ErrorActionPreference = "Stop"
 # Var Declaration
 $oldNamesFilePath = ".\FileRenamer\oldNames.txt"
 $newNamesFilePath = ".\FileRenamer\newNames.txt"
-$filePath = "FileRenamer\Files"
+$filePath = ".\FileRenamer\Files\"
 
 # Set the encoding to UTF-8 to handle all the charters
 $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
