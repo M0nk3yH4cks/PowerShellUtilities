@@ -35,4 +35,5 @@ Set-Location $filePath
 # change its name according to the new names list corresponding element
 for ($i = 0; $i -lt $oldNames.Count; $i++) {
     Move-Item $oldNames[$i] $newNames[$i]
+    Write-Output "Renamed $oldNames[$i]"
 }
