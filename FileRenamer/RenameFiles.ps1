@@ -1,7 +1,8 @@
+$ErrorActionPreference = "Stop"
 # Var Declaration
 $oldNamesFilePath = ".\FileRenamer\oldNames.txt"
 $newNamesFilePath = ".\FileRenamer\newNames.txt"
-$filePath = ".\FileRenamer\Files"
+$filePath = "FileRenamer\Files"
 
 # Set the encoding to UTF-8 to handle all the charters
 $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
@@ -25,11 +26,11 @@ if ($countOld -ne $countNew) {
 }
 
 ################
-##############
-# Do The Magic
+# Do The Magic #
+################
 
 # Go to the directory that contains the files
-Set-Location $filePath
+Set-Location $filePath    
 
 # For every element contained in the old names list, 
 # change its name according to the new names list corresponding element
