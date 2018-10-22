@@ -46,6 +46,6 @@ Multi tool to know the name of DNS used for a specific domain.
 **Manual**
 | Command  | Description | Arg | Description |
 | ------------- | :-------------: | :-------------: | -------------: |
-| idns  | Show the current internal DNS which the PC is running  |   |   |
-| ip  | Get the current public IP  |   |   |
+| idns  | Show the current internal DNS which the PC is running  | >  |  > |
+| ip  | Get the current public IP  | > | > |
 | edns  | Get the authoritative DNS for a domain  | url  | The domain that you want to verify |
