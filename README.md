@@ -44,8 +44,29 @@ Multi tool to know the name of DNS used for a specific domain.
 .\dnsinfo.ps1 `<command>` `<arg>`
 
 **Manual**
-| Command | Description                                           | Arg | Description                        |
-|---------|-------------------------------------------------------|-----|------------------------------------|
-| idns    | Show the current internal DNS which the PC is running |     |                                    |
-| ip      | Get the current public IP                             |     |                                    |
-| edns    | Get the authoritative DNS for a domain                | url | The domain that you want to verify |
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+    <th>Arg</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>idns</td>
+    <td>Show the current internal DNS which the PC is running</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>Get the current public IP</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>edns</td>
+    <td>Get the authoritative DNS for a domain</td>
+    <td>url</td>
+    <td>The domain that you want to verify</td>
+  </tr>
+</table>
