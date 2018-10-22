@@ -50,23 +50,27 @@ Multi tool to know the name of DNS used for a specific domain.
     <th>Description</th>
     <th>Arg</th>
     <th>Description</th>
+    <th>Example</th>
   </tr>
   <tr>
     <td>idns</td>
     <td>Show the current internal DNS which the PC is running</td>
     <td></td>
     <td></td>
+    <td>.\dnsinfo.ps1 idns</td>
   </tr>
   <tr>
     <td>ip</td>
     <td>Get the current public IP</td>
     <td></td>
     <td></td>
+    <td>.\dnsinfo.ps1 ip</td>
   </tr>
   <tr>
     <td>edns</td>
     <td>Get the authoritative DNS for a domain</td>
     <td>url</td>
     <td>The domain that you want to verify</td>
+    <td>.\dnsinfo.ps1 edns url www.google.com</td>
   </tr>
 </table>
