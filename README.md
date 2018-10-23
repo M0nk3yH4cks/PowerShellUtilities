@@ -73,4 +73,16 @@ Multi tool to know the name of DNS used for a specific domain.
     <td>The domain that you want to verify</td>
     <td>.\dnsinfo.ps1 edns url www.google.com</td>
   </tr>
+  <tr>
+    <td rowspan="2">ldns</td>
+    <td rowspan="2">Manage local DNS cached data</td>
+    <td>url</td>
+    <td>The domain that you want to verify</td>
+    <td>.\dnsinfo.ps1 ldns url www.google.com</td>
+  </tr>
+  <tr>
+    <td>flush</td>
+    <td></td>
+    <td>.\dnsinfo.ps1 ldns flush</td>
+  </tr>
 </table>
