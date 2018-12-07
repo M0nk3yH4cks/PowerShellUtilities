@@ -1,4 +1,4 @@
-$links = Get-Content -Path ".\FileDownloader\url.list"
+$links = Get-Content -Path ".\url.list"
 $destination = ".\FileDownloader"
 
 Foreach ($link in $links)
