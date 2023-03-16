@@ -86,3 +86,22 @@ Multi tool to know the name of DNS used for a specific domain.
     <td>.\dnsinfo.ps1 ldns flush</td>
   </tr>
 </table>
+
+## Altri Comandi
+### Sostituire un carattere in un file ricorsivamente
+**Sostituire tutti i caratteri speciali nei file della cartella Report**
+```powershell
+Get-Item C:\Documenti\Report\* -Recurse | ForEach-Object { rename-item $_ ($_.Name -replace ‘[^a-zA-Z0-9.]’, ‘’) }
+```
+
+Per fare un backup dei nomi originali si può utilizzare il seguente script
+```powershell
+$originalFiles = Get-Item C:\Documenti\Report\* -Recurse
+
+$originalFiles | ForEach-Object { rename-item $_ ($_.Name -replace ‘[^a-zA-Z0-9.]’, ‘’) }
+```
+
+E poi ripristinare i nomi file originali usando il seguente comando
+```powershell
+$originalFiles | ForEach-Object { rename-item ($.Directory.FullName + ‘\’ + $.Name) $_.FullName }
+```
